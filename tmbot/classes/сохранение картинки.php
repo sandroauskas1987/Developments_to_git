@@ -17,11 +17,6 @@
         }
     }
 
-//https://api.telegram.org/bot540574772:AAGMxv6Z5WomzZoyjCIGKUXTT2qzZHruwmw/getfile?file_id=AgADAgAD06kxGwtWGEjcLcbcNXX2BjXHRg4ABANhnozkiJ9AmmMCAAEC
-//{"ok":true,"result":{"file_id":"AgADAgAD06kxGwtWGEjcLcbcNXX2BjXHRg4ABANhnozkiJ9AmmMCAAEC","file_size":63833,"file_path":"photos/file_28.jpg"}}
-//https://api.telegram.org/file/bot540574772:AAGMxv6Z5WomzZoyjCIGKUXTT2qzZHruwmw/photos/file_28.jpg
-
-
 
     // общая функция загрузки картинки
     function getPhoto($data)
