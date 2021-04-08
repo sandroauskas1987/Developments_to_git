@@ -1,4 +1,5 @@
 <?php
+Global $chat_id,$data;
     // проверяем если пришло сообщение
     if (array_key_exists('message', $data)) {
         //если пришла команда /start
@@ -16,7 +17,6 @@
             $this->sendMessage($chat_id, "Не понимаю команду! Просто загрузите картинку.");
         }
     }
-
     // общая функция загрузки картинки
     function getPhoto($data)
     {
@@ -27,7 +27,6 @@
         // возвращаем результат загрузки фото
         return $this->copyPhoto($file_path);
     }
-
     // функция получения метонахождения файла
      function getPhotoPath($file_id) {
     	// получаем объект File
@@ -35,7 +34,6 @@
         // возвращаем file_path
         return  $array['result']['file_path'];
     }
-
     // копируем фото к себе
      function copyPhoto($file_path) {
     	// ссылка на файл в телеграме
