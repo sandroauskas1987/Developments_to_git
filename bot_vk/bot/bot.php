@@ -18,10 +18,7 @@ class bot
                 $result_arr['coordinate']='';
                 $this->bot_sendMessage($this->peer_id, $result_arr['message'], $result_arr['buttons'],$result_arr['coordinate']);
             }
-        }/* else {// разбор текста сообщения ..  при необходимости.
-            //$result_arr = $this->text_controller($event['object']['text']);
-            //$this->bot_sendMessage($this->peer_id, $result_arr['message'], $result_arr['buttons'],$result_arr['coordinate']);
-        }*/
+        }
     }
 
     function button_controller($json, $user_id)

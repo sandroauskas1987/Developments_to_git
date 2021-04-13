@@ -61,12 +61,12 @@ function _vkApi_call($method, $params = array()) {
 
   $curl = curl_init($url);
   curl_setopt_array( $curl, array(
-        CURLOPT_POST    => TRUE,            // это именно POST запрос!
-        CURLOPT_RETURNTRANSFER  => TRUE,    // вернуть ответ ВК в переменную
-        CURLOPT_SSL_VERIFYPEER  => FALSE,   // не проверять https сертификаты
+        CURLOPT_POST    => TRUE,
+        CURLOPT_RETURNTRANSFER  => TRUE,
+        CURLOPT_SSL_VERIFYPEER  => FALSE,
         CURLOPT_SSL_VERIFYHOST  => FALSE,
-        CURLOPT_POSTFIELDS      => $params,   // здесь параметры запроса:
-        CURLOPT_URL             => $url,    // веб адрес запроса
+        CURLOPT_POSTFIELDS      => $params,
+        CURLOPT_URL             => $url,
   ));
 
   $json = curl_exec($curl);
